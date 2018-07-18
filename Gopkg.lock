@@ -18,6 +18,14 @@
   version = "v1.2.0"
 
 [[projects]]
+  digest = "1:f4bd9b6cfcbaafa94259861747781022d8f06ff3c88aafe49a815ac02609bc96"
+  name = "github.com/kyokomi/emoji"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "2e9a9507333f3ee28f3fab88c2c3aba34455d734"
+  version = "v1.5.1"
+
+[[projects]]
   digest = "1:fa3db584370e07433cf1db221381418d4f23c167cc27ba850946781ca232ed48"
   name = "github.com/nlopes/slack"
   packages = ["."]
@@ -39,6 +47,7 @@
   analyzer-version = 1
   input-imports = [
     "github.com/go-telegram-bot-api/telegram-bot-api",
+    "github.com/kyokomi/emoji",
     "github.com/nlopes/slack",
   ]
   solver-name = "gps-cdcl"
