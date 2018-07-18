@@ -10,6 +10,7 @@ import (
 
 	"github.com/go-telegram-bot-api/telegram-bot-api"
 	"github.com/nlopes/slack"
+	"github.com/kyokomi/emoji"
 )
 
 type Message struct {
@@ -76,7 +77,8 @@ func (m *MessageManager) Collect(t time.Time) {
 			continue
 		}
 		fmt.Println("sending:", s.Content)
-		_, err := m.bot.Send(tgbotapi.NewMessage(m.chatID, s.Content))
+		text := emoji.Sprint(s.Content)
+		_, err := m.bot.Send(tgbotapi.NewMessage(m.chatID, text))
 		if err != nil {
 			log.Println("failed to send:", err)
 			m.Lock()
