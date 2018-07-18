@@ -35,8 +35,8 @@ func (m *MessageManager) Add(e *slack.DesktopNotification) {
 		ID:      e.Msg,
 		Timeout: time.Now().Add(m.wait),
 		Channel: e.Channel,
-		Content: fmt.Sprintf("%s: %s - %s",
-			e.Title, e.Subtitle, e.Content,
+		Content: fmt.Sprintf("%s: %s",
+			e.Subtitle, e.Content,
 		),
 	}
 }
