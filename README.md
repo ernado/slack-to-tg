@@ -12,7 +12,7 @@ $ export SLACK_TOKEN=''     # Slack bot token
 $ export TELEGRAM_TOKEN=''  # Telegram bot token
 $ export TELEGRAM_TARGET='' # Target chat
 ```
-For the target chat, see http://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id-ruby-gem-telegram-bot.
+For the target chat id, see that [stackoverflow question]( http://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id-ruby-gem-telegram-bot).
 
 You can build and use the docker image (or just use `ernado/slackbot`):
 ```bash
