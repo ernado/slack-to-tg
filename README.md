@@ -1,5 +1,5 @@
 # slack-to-tg
-Send slack desktop notifications to telegram (if not read in 10s)
+Send slack desktop notifications to telegram (if not read in 10s) with emoji support.
 
 Inspired by [slack-to-telegram-bot](https://github.com/trestoa/slack-to-telegram-bot).
 Uses [fork](https://github.com/ernado/slack) of [nlopes/slack](https://github.com/nlopes/slack) package.
