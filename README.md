@@ -2,6 +2,7 @@
 Send slack desktop notifications to telegram
 
 Inspired by [slack-to-telegram-bot](https://github.com/trestoa/slack-to-telegram-bot).
+Uses [fork](https://github.com/ernado/slack) of [nlopes/slack](https://github.com/nlopes/slack) package.
 
 ## Usage
 
